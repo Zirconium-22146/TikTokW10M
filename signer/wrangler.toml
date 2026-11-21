@@ -1,0 +1,10 @@
+name = "tiktokw10m-signer"
+main = "worker.ts"
+compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Секрет не хранится в репозитории:
+#   npx wrangler secret put TOKEN
+[vars]
+REGION = "US"
+MIN_INTERVAL_MS = "700"
